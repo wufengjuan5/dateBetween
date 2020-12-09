@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                var from = new Date("2015-08-08,0:0:0");
+                var to = new Date("2016-10-10,0:0:0");
+                console.log(from )
+                for(var i =from; i <=to; i.setDate(i.getDate() + 1)){
+                    var m = i.getMonth() + 1;
+                        m = m < 10 ? "0" + m : m;
+                        var d = i.getDate();
+                        d = d < 10 ? "0" + d : d;
+                        var str = i.getFullYear () + "-" + m + "-" + d;
+                        console.log(str)
+                }
+
+    </script>
+</body>
+</html>
